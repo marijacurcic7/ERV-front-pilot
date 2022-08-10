@@ -14,6 +14,12 @@ export default function Mesta({ navigation }) {
           onPress={() => navigation.navigate('MestaPretraga')}
         />
       </View>
+      <View style={{padding: 5}}>
+        <Button
+          title="Unos"
+          onPress={() => navigation.navigate('MestaUnos')}
+        />
+      </View>
     </View>
   );
   
