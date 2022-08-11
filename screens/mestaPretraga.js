@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, TextInput, Button, ScrollView} from 'react-native';
 import { globalStyles } from '../styles/global';
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
-import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 
 
 export default class MestaPretraga extends Component {
@@ -19,7 +18,7 @@ export default class MestaPretraga extends Component {
 
   Pretrazi=()=>{
     var naziv = this.state.naziv;
-    var InsertAPIURL = "http://erv.test04.bisoftis.rs/app/scripts/proces/test.php";
+    var InsertAPIURL = "http://erv.test04.bisoftis.rs/app/scripts/proces/react/pretraga.php";
     
     var headers = {
         'Accept': 'application/json',
