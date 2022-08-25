@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, TextInput, Button, ScrollView} from 'react-native';
 import { globalStyles } from '../styles/global';
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
+// import styled from 'styled-components/native'
 
 
 export default class MestaPretraga extends Component {
@@ -58,7 +59,7 @@ export default class MestaPretraga extends Component {
 
     return (
       <View style={globalStyles.container}>
-        <View style={{padding: 5}}>
+        {/* <View style={{padding: 5}}> */}
             <TextInput
             style={{height: 40}}
             textAlign={'center'}
@@ -69,9 +70,11 @@ export default class MestaPretraga extends Component {
             title="Pretraga"
             onPress={() => this.Pretrazi()}
             />
-        </View>
+        {/* </View> */}
+        <View style={{height: 10}}></View>
 
-        <View style={{padding: 5}}>
+
+        {/* <View style={{padding: 5}}> */}
             <Table borderStyle={{borderWidth: 1, borderColor: '#ffa1d2'}}>
             <Row data={this.state.HeadTable} style={styles.HeadStyle} textStyle={styles.TableText}/>
             </Table>
@@ -80,7 +83,7 @@ export default class MestaPretraga extends Component {
                 <Rows data={this.state.DataTable} textStyle={styles.TableText}/>
             </Table>
             </ScrollView>
-        </View>
+        {/* </View> */}
 
 
       </View>
@@ -95,7 +98,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 18,
     paddingTop: 35,
-    backgroundColor: '#ffffff' 
+    backgroundColor: '#ffffff' ,
   },
   HeadStyle: { 
     height: 50,
@@ -103,6 +106,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffe0f0'
   },
   TableText: { 
-    margin: 10
+    margin: 5
   }
 });
+
+// const StyledView = styled.View`
+//   background-color: papayawhip;
+// `
+
+// const StyledRow = styled.Row`
+//   background-color: papayawhip;
+// `
