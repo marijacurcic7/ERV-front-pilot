@@ -12,6 +12,10 @@ export default function Home({ navigation }) {
         title="Mesta"
         onPress={() => navigation.navigate('Mesta')}
       />
+      <Button
+        title="Lica"
+        onPress={() => navigation.navigate('Lica')}
+      />
     </View>
   );
   
